@@ -15,6 +15,11 @@
 			"description": "The hostname of your new heroku app. Problably something like 'http://appname.herokuapp.com'",
 			"required": true,
 			"value": "http://appname.herokuapp.com"
+		},
+		"BENCHMARK_TIME": {
+			"description": "The time to wait for requests to finish",
+			"required": true,
+			"value": "15"
 		}
 	}
 }
