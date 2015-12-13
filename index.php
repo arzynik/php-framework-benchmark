@@ -1,5 +1,12 @@
 <?php
 
+require __DIR__ . '/../libs/redis.php';
+
+if (getenv('REDIS_URL')) {
+	file_put_contents(__DIR__ . '/output/results.hello_world.log', $redis->get('results'));
+	file_put_contents(__DIR__ . '/output/urls.log', $redis->get('urls'));
+}
+
 Parse_Results: {
     require __DIR__ . '/libs/parse_results.php';
     $results = parse_results(__DIR__ . '/output/results.hello_world.log');
