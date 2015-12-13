@@ -16,11 +16,7 @@ if [ ! `which curl` ]; then
 fi
 
 if [ -n "$GITHUB_OAUTH" ]; then
-    echo '{
-        "github-oauth": {
-            "github.com": "'$GITHUB_OAUTH'"
-        }
-    }' > /app/.composer/auth.json
+	composer config -g github-oauth.github.com $GITHUB_OAUTH
 fi
 
 if [ $# -eq 0 ]; then
