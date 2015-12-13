@@ -2,5 +2,10 @@
 	"require": {
 		"ext-mbstring": "*",
 		"ext-intl": "*"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"sh setup.sh"
+		]
 	}
 }

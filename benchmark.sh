@@ -1,9 +1,9 @@
 #!/bin/sh
 
 if [ -z $BENCHMARK_BASE ]; then
-	base=$BENCHMARK_BASE
-else
 	base="http://127.0.0.1/php-framework-benchmark"
+else
+	base=$BENCHMARK_BASE
 fi
 
 cd `dirname $0`
