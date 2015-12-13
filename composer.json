@@ -5,7 +5,7 @@
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"sh setup.sh tipsy-0.10/ fatfree-3.5/ slim-3.0/ lumen-5.1/"
+			"sh setup.sh"
 		]
 	}
 }
