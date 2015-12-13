@@ -1,6 +1,6 @@
 #!/bin/sh
 
-composer install --no-dev --optimize-autoloader
+composer install --no-dev --optimize-autoloader --prefer-dist
 chmod o+w storage/*
 sudo chmod o+w storage/framework/*
 php artisan optimize --force
