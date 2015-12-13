@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../libs/redis.php';
+require __DIR__ . '/libs/redis.php';
 
 if (getenv('REDIS_URL')) {
 	file_put_contents(__DIR__ . '/output/results.hello_world.log', $redis->get('results'));
