@@ -4,5 +4,12 @@
 	"repository": "https://github.com/arzynik/php-framework-benchmark/tree/heroku",
 	"scripts": {
 		"postdeploy": "sh setup.sh"
+	},
+	"env": {
+		"GITHUB_OAUTH": {
+			"description": "An OAuth token from github. Without this composer can not peroperly setup.",
+			"required": false,
+			"value": ""
+		}
 	}
 }

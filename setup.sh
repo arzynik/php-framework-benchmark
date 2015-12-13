@@ -15,6 +15,14 @@ if [ ! `which curl` ]; then
     exit 1;
 fi
 
+if [ -n $GITHUB_OAUTH ]
+    echo '{
+        "github-oauth": {
+            "github.com": "'$GITHUB_OAUTH'"
+        }
+    }' > /app/.composer/auth.json
+fi
+
 if [ $# -eq 0 ]; then
     # include framework list
     . ./list.sh
