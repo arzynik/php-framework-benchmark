@@ -15,7 +15,7 @@ if [ ! `which curl` ]; then
     exit 1;
 fi
 
-if [ -n $GITHUB_OAUTH ]
+if [ -n $GITHUB_OAUTH ]; then
     echo '{
         "github-oauth": {
             "github.com": "'$GITHUB_OAUTH'"
