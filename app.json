@@ -8,8 +8,13 @@
 	"env": {
 		"GITHUB_OAUTH": {
 			"description": "An OAuth token from github. Without this composer can not peroperly setup.",
-			"required": false,
+			"required": true,
 			"value": ""
+		},
+		"BENCHMARK_HOSTNAME": {
+			"description": "The hostname of your new heroku app. Problably something like 'appname.herokuapp.com'",
+			"required": true,
+			"value": "appname.herokuapp.com"
 		}
 	}
 }

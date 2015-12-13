@@ -1,6 +1,10 @@
 #!/bin/sh
 
-base="http://127.0.0.1/php-framework-benchmark"
+if [ -z $BENCHMARK_HOSTNAME ]; then
+    BENCHMARK_HOSTNAME="127.0.0.1"
+fi
+
+base="http://$BENCHMARK_HOSTNAME/php-framework-benchmark"
 
 cd `dirname $0`
 
