@@ -1,0 +1,8 @@
+{
+	"name": "PHP Framework Benchmark",
+	"description": "Benchmark multiple frameworks on Heroku",
+	"repository": "https://github.com/arzynik/php-framework-benchmark/tree/heroku",
+	"scripts": {
+		"postdeploy": "sh setup.sh"
+	}
+}
